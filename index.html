@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Shopping</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4538fade3f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-sm sticky-top" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="" width="150px" style="margin-left: 50px;" ></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+          </div>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search Products" aria-label="Search">
+            <button class="btn search-btn" type="submit">Search</button>
+            </form>
+          <div class="icons">
+            <img src="./assets/user.png" class="cta-btn" id="open" alt="" width="25px">
+            <img src="./assets/shopping.png" alt="" width="20px">
+
+          </div>
+        </div>
+      </nav>
+
+    <!-- navbar end -->
+     <!-- popup Menu start -->
+
+     <section class="popup-container" id="modal">
+      <section class="popup">
+        <button class="close-btn" id="close">x</button>
+        <div class="modal-content">
+          <h1>Sign Up</h1>
+          <form class="modal-form">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name"  placeholder="Enter Name" class="form-input" />
+            </div>
+            <div>
+              <label for="email">Email</label> 
+              <input type="text" id="email" placeholder="Enter Email" class="form-input" />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="text" id="password"  placeholder="Enter Password" class="form-input"/>
+            </div>
+            <div>
+              <label for="password2">Confirm Password</label>
+              <input type="text"   id="password2" placeholder="Confrim Password" class="form-input"/>
+            </div>
+            <input type="submit" value="Submit" class="submit-btn" />
+          </form>
+        </div>
+      </section>
+    </section>
+  
+
+          <!-- popup Menu end -->
+
+
+    <!-- Slider section -->
+    
+    <section class=" slider-container">
+      <div class=" slider-content">
+        <h1>The <span>Biggest</span> Sale <br>
+          Category,<span class="changetext"></span> 
+       </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <h5>Upto 10% OFF</h5>
+        <button class="btn slider-btn">Add Cart</button>
+        </div>
+      <div class="slider-img">
+        <img src="./assets/home-slider.png" alt="">
+      </div>
+    </section>
+
+        <!-- Slider section end -->
+
+         <!-- shop section start -->
+ 
+         <section class="container py-5" id="collection">
+            <h1 class="text-center">Shop by collections</h1>
+              <div class="row " id="shop-card" >
+                <div class="col-6 col-sm-4 col-md-2 py-4">
+                  <div class="card ">
+                  <img src="./assets/mobiles.jpg" alt="">
+                </div>
+                  <div class="collection-content">
+                    <h5 class="text-center mt-3">Smart Phones</h5>
+                  </div>
+                  
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 py-4 ">
+                  <div class="card">
+                  <img src="./assets/tab.jpg" alt="">
+                  </div>
+                  <div class="collection-content">
+                    <h5 class="text-center mt-3">Tablets</h5>
+                  </div>
+                  
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 py-4">
+                  <div class="card">
+                  <img src="./assets/buds.jpg" alt="">
+                  </div>
+                  <div class="collection-content">
+                    <h5 class="text-center mt-3">Earbuds</h5>
+                  </div>
+                  
+                  </div>
+                  <div class="col-6 col-sm-4 col-md-2 py-4">
+                    <div class="card ">
+                    <img src="./assets/smarttv.jpg" alt="">
+                    </div>
+                    <div class="collection-content">
+                      <h5 class="text-center mt-3">Smart TV</h5>
+                    </div>
+                    
+                  </div>
+                  <div class="col-6 col-sm-4 col-md-2 py-4">
+                    <div class="card">
+                    <img src="./assets/smart_watch.jpg" alt="">
+                    </div>
+                    <div class="collection-content">
+                      <h5 class="text-center mt-3">Smart Watch</h5>
+                    </div>
+                    
+                  </div>
+                  <div class="col-6 col-sm-4 col-md-2 py-4">
+                    <div class="card">
+                    <img src="./assets/boom_headphone.jpg" alt="">
+                    </div>
+                <div class="collection-content">
+                  <h5 class="text-center mt-3">Headphones</h5>
+                </div>
+                </div>
+              </div>
+            </div>
+         </section>
+      
+
+
+         <!-- shop section end -->
+
+         <!-- products section start -->
+      <section class="container" id="products-card">
+        <h1 class="text-center  mb-5">Products</h1>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 py-3">
+            <div class="card">
+            <img src="./assets/mobiles.jpg" alt="">
+            <div class="overlay">
+              <button type="button" class="btn btn-warning" title="Quick Shop"><i class="fa-regular fa-eye"></i></button>
+              <button type="button" class="btn btn-warning" title="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button type="button" class="btn btn-warning" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+              <div class="card-body">
+                <h3 class="text-center">Iphone</h3>
+                <div class="star text-center">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                </div>
+                <h5>$29,999 <span><i class="fa-solid fa-square-plus" width="20px"></i></span></h5>
+              </div>
+           </div>
+           </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3  py-3">
+              <div class="card">
+              <img src="./assets/boom_headphone.jpg" alt="">
+              <div class="overlay">
+                <button type="button" class="btn btn-warning" title="Quick Shop"><i class="fa-regular fa-eye"></i></button>
+                <button type="button" class="btn btn-warning" title="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+                <button type="button" class="btn btn-warning" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="card-body">
+                  <h3 class="text-center">Headphones</h3>
+                  <div class="star text-center">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    
+  
+                  </div>
+                  <h5>$29,999 <span><i class="fa-solid fa-square-plus" width="20px"></i></span></h5>
+                </div>
+  
+              </div>
+
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3  py-3">
+            <div class="card">
+            <img src="./assets/buds.jpg" alt="">
+            <div class="overlay">
+              <button type="button" class="btn btn-warning" title="Quick Shop"><i class="fa-regular fa-eye"></i></button>
+              <button type="button" class="btn btn-warning" title="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button type="button" class="btn btn-warning" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+              <div class="card-body">
+                <h3 class="text-center">Earbuds</h3>
+                <div class="star text-center">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  
+
+                </div>
+                <h5>$29,999 <span><i class="fa-solid fa-square-plus" width="20px"></i></span></h5>
+              </div>
+
+            </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3  py-3">
+          <div class="card">
+          <img src="./assets/laptop.jpg" alt="">
+          <div class="overlay">
+            <button type="button" class="btn btn-warning" title="Quick Shop"><i class="fa-regular fa-eye"></i></button>
+            <button type="button" class="btn btn-warning" title="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+            <button type="button" class="btn btn-warning" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <div class="card-body">
+              <h3 class="text-center">Laptops</h3>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                
+
+              </div>
+              <h5>$29,999 <span><i class="fa-solid fa-square-plus" width="20px"></i></span></h5>
+            </div>
+
+          </div>
+
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 py-3">
+        <div class="card">
+        <img src="./assets/smart_watch.jpg" alt="">
+        <div class="overlay">
+          <button type="button" class="btn btn-warning" title="Quick Shop"><i class="fa-regular fa-eye"></i></button>
+          <button type="button" class="btn btn-warning" title="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+          <button type="button" class="btn btn-warning" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+          <div class="card-body">
+            <h3 class="text-center">Smart Watch</h3>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              
+
+            </div>
+            <h5>$29,999 <span><i class="fa-solid fa-square-plus" width="20px"></i></span></h5>
+          </div>
+
+        </div>
+
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3  py-3">
+      <div class="card">
+      <img src="./assets/smarttv.jpg" alt="">
+      <div class="overlay">
+        <button type="button" class="btn btn-warning" title="Quick Shop"><i class="fa-regular fa-eye"></i></button>
+        <button type="button" class="btn btn-warning" title="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+        <button type="button" class="btn btn-warning" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="card-body">
+
+          <h3 class="text-center">Smart TV</h3>
+          <div class="star text-center">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            
+
+          </div>
+          <h5>$29,999 <span><i class="fa-solid fa-square-plus" width="20px"></i></span></h5>
+        </div>
+      </div>
+
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3 py-3">
+    <div class="card">
+    <img src="./assets/tab.jpg" alt="">
+    <div class="overlay">
+      <button type="button" class="btn btn-warning" title="Quick Shop"><i class="fa-regular fa-eye"></i></button>
+      <button type="button" class="btn btn-warning" title="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <button type="button" class="btn btn-warning" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+      <div class="card-body">
+        <h3 class="text-center">Tablets</h3>
+        <div class="star text-center">
+          <i class="fa-solid fa-star checked"></i>
+          <i class="fa-solid fa-star checked"></i>
+          <i class="fa-solid fa-star checked"></i>
+          <i class="fa-solid fa-star checked"></i>
+          <i class="fa-solid fa-star checked"></i>
+          
+
+        </div>
+        <h5>$29,999 <span><i class="fa-solid fa-square-plus" width="20px"></i></span></h5>
+      </div>
+
+    </div>
+
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3  py-3">
+  <div class="card">
+  <img src="./assets/BLUETOOTH_SPEAKER.jpg" alt="">
+  <div class="overlay">
+    <button type="button" class="btn btn-warning" title="Quick Shop"><i class="fa-regular fa-eye"></i></button>
+    <button type="button" class="btn btn-warning" title="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+    <button type="button" class="btn btn-warning" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+    <div class="card-body">
+      <h3 class="text-center">Bluetooth Speaker</h3>
+      <div class="star text-center">
+        <i class="fa-solid fa-star checked"></i>
+        <i class="fa-solid fa-star checked"></i>
+        <i class="fa-solid fa-star checked"></i>
+        <i class="fa-solid fa-star checked"></i>
+        <i class="fa-solid fa-star checked"></i>
+        
+
+      </div>
+      <h5>$29,999 <span><i class="fa-solid fa-square-plus" width="20px"></i></span></h5>
+    </div>
+
+  </div>
+
+</div>
+        </div>
+      </div>
+    </section>
+
+   <!-- products section end -->
+
+
+    <!-- banner section start -->
+
+    <section class="container">
+    <div class="banner" id="banner">
+      <div class="banner-content">
+      <h1>Special <span>Collection</span></h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, facilis?
+        <br>Lorem ipsum dolor sit amet.
+      </p>
+      <h5>UPTO 50% OFF</h5>
+      <a href="#" class="btn banner-btn">Add Card</a>
+
+    </div>
+    <div class="banner-img">
+      <img src="./assets/banner-image.png" alt="">
+    </div>
+  </div>
+    </section>
+
+    <!-- banner section end -->
+
+   
+     <!-- contact us -->
+
+     <section class="container mt-5" id="contact">
+      <h1 class="text-center my-5">Contact Us</h1>
+      <div class="row">
+        
+        <div class="col-sm-6 py-3 py-md-0">
+          <i class="fa-solid fa-location-dot my-3 "></i>
+          <p>No -70,74 Dr alagappa Road, Purasawalkam
+            Chennai -600 084
+           <br>(Opp. Puttur kattu| Nearby Amrit Medical Center)</p>
+      
+          <i class="fa-solid fa-phone my-3 "></i>
+          <p>91+ 0000000000
+            <br>91+ 0000000000</p>
+      
+          <i class="fa-solid fa-envelope my-3"></i>
+          <p>example@gmail.com
+            <br>contact@gmail.com</p>
+        </div>
+      
+
+      <!-- <div class="row"> -->
+        <div class="col-sm-6 py-6 py-md-0">
+          <div class="row">
+            <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" class="form-control my-4" id="username" placeholder="Your Name">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group ">
+            <input type="text" class="form-control my-4 " id="email" placeholder=" Your Email">
+          </div>
+        </div>
+        </div>
+          <div class="form-group">
+            <input type="text" class="form-control mt-2 my-4" id="phone" placeholder="Enter Your Phone Number">
+          </div>
+      
+      <div class="form-group">
+        <textarea name="" class="form-control" id="message" rows="5"placeholder="Enter Your Message"></textarea>
+      </div>
+      <div id="message"><button class="btn my-4">Send Message</button></div>
+    </section>
+
+<!-- contact section end -->
+
+     <!-- footer section start -->
+
+        <footer id="footer" class="mt-5">
+          <div class="footer-top">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 footer-contact">
+                   <img src="./assets/logo.png" alt="">
+                   <p>Salim Bhai
+                    <br>
+                    Anthony Bhai <br>
+                    Mushal Bhai <br>
+                    <strong>Phone</strong> 91+ 0000000000 <br>
+                    <strong>Email</strong> example@gmail.com
+                   </p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                  <li> <i class="fa-solid fa-chevron-right"></i><a href="#">Home</a></li>
+                  <li> <i class="fa-solid fa-chevron-right"></i><a href="#">About us</a></li>
+                  <li> <i class="fa-solid fa-chevron-right"></i><a href="#">Products</a></li>
+                  <li> <i class="fa-solid fa-chevron-right"></i><a href="#">Services</a></li>
+                  <li> <i class="fa-solid fa-chevron-right"></i><a href="#">Blog</a></li>
+                  <li> <i class="fa-solid fa-chevron-right"></i><a href="#">Contact Us</a></li>
+                </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                  <h4>Our Services</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, laborum.</p>
+                  <ul>
+                  <li> <i class="fa-solid fa-chevron-right"></i><a href="#">Iphones</a></li>
+                  <li> <i class="fa-solid fa-chevron-right"></i><a href="#">Oppo</a></li>
+                  <li> <i class="fa-solid fa-chevron-right"></i><a href="#">One Plus</a></li>
+                  <li> <i class="fa-solid fa-chevron-right"></i><a href="#">Redmi</a></li>
+                  <li> <i class="fa-solid fa-chevron-right"></i><a href="#">Realme</a></li>
+                </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                  <h4>Our Social Links</h4>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <div class="social-links mt-3"> 
+                    <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="twitter"><i class="fa-brands fa-whatsapp"></i></a>
+
+                    <a href="#" class="twitter"><i class="fa-brands fa-youtube"></i></a>
+
+                    <a href="#" class="twitter"><i class="fa-brands fa-facebook"></i></a>
+
+                    <a href="#" class="twitter"><i class="fa-brands fa-instagram"></i></a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container py-4">
+            <div class="copy-right">
+              &copy; Copyright <strong><span>Your Me Shop</span></strong> Allb right reserveed
+            </div>
+            <div class="credits">
+                Designed by <a href="#">Anandhu</a>
+            </div>
+          </div>
+        </footer>
+
+        <a href="#" class="arrow"><i class="fa-solid fa-chevron-down"></i></a>
+        
+     
+      <!-- footer section end -->
+     
+       <script src="./js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

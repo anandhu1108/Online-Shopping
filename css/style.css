@@ -1,0 +1,514 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary:#17489f;
+    --secondary:#eb6f2b;
+}
+#navbar{
+    background-color: yellow;
+   
+    
+}
+.nav-link{
+    color: black !important;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 15px;
+    transition: 0.5s ease;
+}
+/* .nav-link:hover{
+    color: var(--secondary) !important; 
+}*/
+.icons{
+    margin-right: 50px;
+}
+.icons img{
+    margin-left: 15px;
+    cursor: pointer;
+
+}
+.search-btn{
+    outline: 1px solid var(--primary);
+}
+
+/* navbar end */
+
+/* Slider section */
+
+.slider-container{
+    width: 100%;
+    height: 91.5vh;
+    background-color: #a9a9a929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.slider-img{
+    flex: 1 1 400px;
+}
+.slider-img img{
+    width: 100%; 
+    
+}
+.slider-content{
+    flex: 1 1 400px;
+   margin-left: 70px;
+}
+.slider-content h1{
+    max-width: 600px;
+    color: var(--primary);
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 30px;
+}
+.slider-content h1 span{
+    color: var(--secondary);
+}
+.slider-content p{
+    font-size: 20px;
+}
+.slider-content h5{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.slider-content .slider-btn{
+    background-color: var(--secondary);
+    padding: 6px 16px;
+    color: white;
+}
+.slider-content .slider-btn:hover{
+    border: 2px solid var(--secondary);
+    background-color: none;
+    color: var(--primary);
+}
+.changetext::after{
+    content: '';
+    color: var(--secondary);
+    text-shadow: 1px 1px 1px black;
+    animation: changetext 10s infinite linear;
+    
+    
+ }
+ @keyframes  changetext{
+     0%{content: "iPhone";}
+     20%{content: "Redmi";}
+     40%{content: "Oppo";}
+     60%{content: "Samsung";}
+     80%{content: "Realme";}
+     100%{content: "Poco";}
+ }
+/* Slider section end */
+
+
+/* Popup Form start */
+  .popup-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    position: fixed;
+    top: 16%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  
+  .popup {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 400px;
+  }
+  
+  .modal-content {
+    padding: 20px;
+  }
+  
+  .modal-form div {
+    margin: 20px 0;
+  }
+  
+  .modal-form label {
+    display: block;
+    margin-bottom: 6px;
+  }
+  
+  .modal-form .form-input {
+    padding: 8px;
+    width: 100%;
+  }
+  
+  .close-btn {
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    cursor: pointer;
+  }
+  
+  .popup-container .submit-btn {
+    padding: 10px 30px;
+    font-weight: bold;
+    background: crimson;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* JavaScript */
+  .popup-container.show-modal {
+    display: block;
+  }
+   
+
+/* Popup Form end */
+
+/* Shop section start */
+
+#collection h1{
+    font-weight: bold;
+    color: var(--secondary);
+    text-shadow: 1px 1px 1px black;  
+}
+
+#shop-card .card{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#shop-card .card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+#shop-card .card:hover{
+    transform: translateY(-10px);
+}
+/* Shop section end */
+
+/* product section start */
+
+#products-card{
+    margin-top: 50px;
+}
+#products-card h1{
+    font-weight: bold;
+     color: var(--secondary);
+     text-shadow: 1px 1px 1px black;
+}
+#products-card .card{
+    background-color: #a9a9a929;
+    cursor: pointer;
+}
+.overlay{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+#products-card .card:hover .overlay{
+    opacity: 1;
+    transition: 0.5s ease;
+    margin-left: 5%;
+}
+.overlay i{
+    background-color: var(--secondary);
+    color: white;
+    height: 35px;
+    width: 35px;
+    font-size: 15px;
+    padding: 10px;
+    margin-right: 100px;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+.overlay .btn-warning{
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+}
+.checked{
+    color: var(--secondary);
+}
+#products-card h5{
+    font-size: 15px;
+    margin-top: 10px;
+}
+#products-card h5 span{
+    float: right;
+}
+/* product section end */
+
+
+/* banner section start */
+.banner{
+    width: 100%;
+    height: 65vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.54),rgba(0, 0, 0, 0.068)), url(../assets/banner-img.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    margin-top: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px black;
+}
+
+.banner-img{
+    flex: 1 1 400px;
+}
+.banner-img img{
+    width: 100%;
+    
+}
+.banner .banner-content{
+    flex: 1 1 400px;
+}
+.banner .banner-content h1{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 30px;
+ }
+ .banner .banner-content h1 span{
+    color: var(--secondary);
+ }
+ .banner-content p{
+    max-width: 600px;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    color: white;
+    margin-left: 30px;
+ }
+ .banner-content h5{
+    font-size: 25px;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    
+ }
+ .banner-content a{
+    background-color: var(--secondary);
+    padding: 6px 16px;
+    color: white;
+    margin-left: 30px;
+   
+}
+.banner-content a:hover{
+    border: 2px solid var(--secondary);
+    background-color: none;
+    color: white;
+}
+
+/* banner section end */
+
+/* contact-section */
+#contact h1{
+    font-weight: bold;
+     color: var(--secondary);
+     text-shadow: 1px 1px 1px black;
+}
+#contact p{
+    font-weight: bold;
+}
+.fa-envelope{
+    padding: 10px;
+    background-color: var(--secondary);
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+}
+.fa-phone{
+    padding: 10px;
+    background-color: var(--secondary);
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+}
+.fa-location-dot{
+    padding: 10px;
+    background-color: var(--secondary);
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+}
+
+#contact h2{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+#message button{
+    padding: 7px 30px;
+    background-color: var(--secondary);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#footer{
+    padding: 0px 0px 30px 0;
+    color: aliceblue;
+    font-size: 14px;
+    background-color: #111111;
+}
+#footer .footer-top{
+    padding: 60px 0px 30px;
+    background-color: #1b1b1b;
+    color: white;
+}
+#footer .footer-top .footer-contact img{
+    margin: 10px 0px 10px 0px;
+}
+#footer .footer-top .footer-contact p{
+    font-size: 14px;
+    padding: 2px 0 2px 0;
+    margin-bottom: 0;
+    color: #b7b7b7;
+}
+#footer .footer-top h4{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+}
+#footer .footer-top .footer-links{
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#footer .footer-top .footer-links ul li i{
+    padding-right: 5px;
+    color: var(--secondary);
+}
+#footer .footer-top .footer-links ul li {
+    padding:10px 0;
+    display: flex;
+    align-items: center;
+}
+#footer .footer-top .footer-links ul li a{
+    color: white;
+    transition: 0.3s ease;
+    display: inline-block;
+    line-height: 1;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 2px;
+}
+#footer .footer-top .footer-links ul li a:hover{
+    text-decoration: none;
+    color: var(--secondary);
+}
+#footer .footer-top .social-links a{
+    font-size: 18px;
+    display: inline-block;
+    background-color: #373737;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s ease;
+}
+#footer .footer-top .social-links a:hover{
+    background-color: var(--secondary);
+    color: white;
+    text-decoration: none;
+}
+#footer .copy-right{
+    text-align: center;
+    float: left;
+}
+#footer .credits{
+    float: right;
+}
+html{
+    scroll-behavior: smooth;
+}
+.arrow i{
+    text-align: center;
+    background-color: var(--secondary);
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+}
+.arrow{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+        
+}
+
+
+@media only screen and (max-width:995px){
+    .banner{
+        height: 100vh;
+    }
+    .banner-img img{
+        margin-left: 100px;
+    }
+}
+@media only screen and (max-width:600px){
+    .slider-content h1{
+        font-size: 50px;
+    }
+    .slider-content p{
+        font-size: 18px;
+    }
+    .slider-content h5{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .card{
+        margin-left: 40px;
+    }
+}
+@media only screen and (max-width:450px){
+    .banner-img img{
+        margin-left: 50px;
+    }
+    .slider-content h1{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:300px){
+    .banner-content h1{
+        font-size: 30px;
+    }
+    .banner-content span{
+        font-size: 30px;
+    }
+}
